@@ -1,3 +1,4 @@
 # AWT-AdvanceWebTechnology-
-* Servlet 
-  * Cokies
+* Servlet
+  
+* Cokies
