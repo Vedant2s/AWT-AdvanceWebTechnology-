@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+</head>
+<body>
+
+<h2>College Admission Form</h2>
+
+<form action="SubmitAdmissionServlet" method="POST">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Academic Information</legend>
+        <label for="previous_school">Previous School/College:</label><br>
+        <input type="text" id="previous_school" name="previous_school" required><br><br>
+        
+        <label for="grade">Grade/Percentage:</label><br>
+        <input type="text" id="grade" name="grade" required><br><br>
+        
+        <label for="degree">Degree Applying For:</label><br>
+        <select id="degree" name="degree" required>
+            <option value="">Select Degree</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="Masters">Masters</option>
+            <option value="PhD">PhD</option>
+        </select><br><br>
+        
+        <label for="major">Intended Major:</label><br>
+        <input type="text" id="major" name="major"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Information</legend>
+        <label for="essay">Personal Statement/Essay:</label><br>
+        <textarea id="essay" name="essay" rows="6" cols="50" required></textarea><br><br>
+        
+        <label for="recommendation">Letter of Recommendation:</label><br>
+        <input type="file" id="recommendation" name="recommendation" accept=".pdf,.doc,.docx"><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
